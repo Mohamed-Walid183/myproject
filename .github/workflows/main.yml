@@ -1,9 +1,17 @@
+name: Test Workflow
 
-dvlnsdS
+on:
+  push:
+    branches:
+      - master
 
-s;s
-ls
-ks
-
-sk
-s
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Testing github action
+        run: pwd
+        
+      - name: Testing printing
+        run: echo "Ahmed"
